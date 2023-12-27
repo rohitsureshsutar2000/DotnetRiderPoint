@@ -1,0 +1,23 @@
+﻿@using Ride;
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    @{
+        List<Rider> ls1=(List<Rider>)this.ViewData["Riders"];
+            foreach(Rider i in ls1)
+            {
+                <pre>@i.Rider_Id
+                    @i.Name
+                    @i.Mobile_no
+                    @i.Address
+                </pre>
+               
+            }
+    }
+
+</div>
