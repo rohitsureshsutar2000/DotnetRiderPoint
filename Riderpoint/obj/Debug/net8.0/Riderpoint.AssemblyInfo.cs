@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("RiderPoint")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+321cae8909233a283d93523ac1e05431ee1f1d49")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2b1c7b2e218c8405d70728a44d7d68660db909a8")]
 [assembly: System.Reflection.AssemblyProductAttribute("RiderPoint")]
 [assembly: System.Reflection.AssemblyTitleAttribute("RiderPoint")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

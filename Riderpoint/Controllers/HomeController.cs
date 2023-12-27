@@ -1,7 +1,9 @@
 using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
-using Ride;
+using bol;
+using DALconnet;
 using Riderpoint.Models;
+using System.Collections.Generic;
 
 namespace Riderpoint.Controllers;
 
@@ -16,11 +18,15 @@ public class HomeController : Controller
 
     public IActionResult Index()
     {
-        Rider r1 = new Rider{Rider_Id=1,Name="Rohit",Mobile_no="4637",Address="Pune"};
-        Rider r2 = new Rider{Rider_Id=2,Name="Anshu",Mobile_no="465537",Address="Bhopal"};
-        List<Rider> ls=new List<Rider>();
-        ls.Add(r1);
-        ls.Add(r2);
+        // Rider r1 = new Rider{Rider_Id=1,Name="Rohit",Mobile_no="4637",Address="Pune"};
+        // Rider r2 = new Rider{Rider_Id=2,Name="Anshu",Mobile_no="465537",Address="Bhopal"};
+        // List<Rider> ls=new List<Rider>();
+        // ls.Add(r1);
+        // ls.Add(r2);
+
+        DBManager db=new DBManager();
+        List<Rider> ls=DBManager.GetAllRiders();
+
         ViewData["Riders"]=ls;
         return View();
     }

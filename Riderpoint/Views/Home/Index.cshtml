@@ -1,4 +1,6 @@
-﻿@using Ride;
+﻿@using bol;
+
+@using System.Collections.Generic;
 
 @{
     ViewData["Title"] = "Home Page";
@@ -18,6 +20,16 @@
                 </pre>
                
             }
+        @* List<Rider> las1=(List<Rider>)this.ViewData["sendRiderInfo"];
+            foreach(Rider i in ls1)
+            {
+                <p>form DataBase</p>
+                <pre>@i.Rider_Id
+                    @i.Name
+                    @i.Mobile_no
+                    @i.Address
+                </pre>
+            } *@
     }
 
 </div>
